@@ -14,7 +14,7 @@ type Props = {
   label: string;
   value: string;
   setValue: Dispatch<SetStateAction<string>>;
-  data: any[];
+  data: Array<{ label: string }>;
   errorMessage?: string;
   labelClasses?: string;
   selectClasses?: string;

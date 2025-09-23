@@ -3,9 +3,10 @@ import React from "react";
 import { Filter } from "lucide-react";
 import { Button } from "../ui/shadcnui/button";
 import { cn } from "@/lib/utils";
+import { FilterValue } from "@/types";
 
 type Props = {
-  data: Array<any>;
+  data: Array<FilterValue>;
   value: string;
   setValue: (value: string) => void;
 };

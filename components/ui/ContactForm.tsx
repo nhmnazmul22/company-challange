@@ -94,7 +94,7 @@ const ContactForm = () => {
       <div className="text-center mb-10">
         <h4 className="text-xl font-semibold">Get In Touch</h4>
         <p className="text-base text-gray-600">
-          Ready to transform your business? Let's discuss your project.
+          Ready to transform your business? Lets discuss your project.
         </p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 justify-between items-center">
