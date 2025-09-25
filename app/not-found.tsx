@@ -22,7 +22,7 @@ const NotFoundPage: NextPage = ({}) => {
           Your requested resource not found, try again.
         </p>
         <Link href="/">
-          <Button variant="glowEffect" className="mt-3">
+          <Button variant="primary" className="mt-3">
             Go back Home
           </Button>
         </Link>
