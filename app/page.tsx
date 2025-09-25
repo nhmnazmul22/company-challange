@@ -8,12 +8,14 @@ import Testimonial from "@/components/sections/Testimonial";
 import Process from "@/components/sections/Process";
 import LatestBlogs from "@/components/sections/LatestBlogs";
 import CTA from "@/components/sections/CTA";
+import BestCategories from "@/components/sections/BestCategories";
 
 const Home: NextPage = ({}) => {
   return (
     <RootLayout>
       <HeroSection />
       <WhyChoose />
+      <BestCategories />
       <Featured />
       <OurSuccess />
       <Testimonial />

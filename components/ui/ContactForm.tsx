@@ -2,12 +2,12 @@
 import { FormEvent, useState } from "react";
 import { InputWithLabel } from "./InputWithLabel";
 import SelectWithLabel from "./SelectWithLabel";
-import { servicesCategories } from "@/data/services";
+import { productsCategories } from "@/data/products";
 import { Textarea } from "./shadcnui/textarea";
 import { Label } from "./shadcnui/label";
 import { Button } from "./shadcnui/button";
 import { Alert, AlertTitle } from "@/components/ui/shadcnui/alert";
-import { AlertCircleIcon } from "lucide-react";
+import { AlertCircleIcon, Send } from "lucide-react";
 import { isValidateEmail } from "@/lib/validator";
 import { toast } from "sonner";
 import { useStore } from "@/store/useStore";
@@ -127,7 +127,7 @@ const ContactForm = () => {
           label="Service Interested In"
           value={service}
           setValue={setService}
-          data={servicesCategories}
+          data={productsCategories}
           errorMessage={checkIsError("service")}
         />
       </div>
@@ -151,12 +151,8 @@ const ContactForm = () => {
           </Alert>
         </div>
       )}
-      <Button
-        type="submit"
-        variant="outline"
-        className="bg-accent !py-5 !px-10"
-      >
-        Send Message
+      <Button type="submit" variant="primary" size="lg">
+        <Send /> Send Message
       </Button>
     </form>
   );

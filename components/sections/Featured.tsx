@@ -1,30 +1,31 @@
 import React from "react";
 import Container from "../layout/Container";
 import SectionHeading from "../ui/SectionHeading";
-import ServiceCard from "../ui/ServiceCard";
-import services from "@/data/services";
+import services from "@/data/products";
 import { Button } from "../ui/shadcnui/button";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
+import ProductCard from "../ui/ProductCard";
 
 const Featured = () => {
-  const featuredServices = services.filter((service) => service.isFeatured);
+  const featuredProducts = services.filter((service) => service.isFeatured);
 
   return (
     <Container>
       <SectionHeading
-        title="Featured Solution"
-        subTitle="Discover our most popular services designed to transform your business."
+        title="Top Selling"
+        spanText="Product"
+        subTitle="Discover our most popular lubricants and oils trusted by vehicles and industries worldwide"
       />
-      <div className="grid grid-cols-12 gap-5 xl:gap-10 mt-10">
-        {featuredServices.slice(0, 3).map((service) => (
-          <ServiceCard key={service.id} serviceInfo={service} />
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 mt-10">
+        {featuredProducts.slice(0, 4).map((product) => (
+          <ProductCard key={product.id} productInfo={product} />
         ))}
       </div>
       <div className="mt-14 text-center">
-        <Link href="/services">
-          <Button variant="glowEffect" className="py-5 !px-8">
-            View All Services <ArrowRight />
+        <Link href="/products">
+          <Button variant="primary" size="lg">
+            View All Products <ArrowRight />
           </Button>
         </Link>
       </div>

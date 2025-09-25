@@ -16,7 +16,7 @@ const PageHeader = ({
   subTitleClasses,
 }: Props) => {
   return (
-    <div className="bg-linear-to-bl from-violet-500 to-fuchsia-500 pt-10 md:pt-16">
+    <div className="bg-gradient-to-r from-blue-500 to-indigo-600 pt-10 md:pt-16">
       <Container>
         <div className="text-center max-w-[700px] mx-auto">
           <h2
@@ -29,7 +29,7 @@ const PageHeader = ({
           </h2>
           <p
             className={cn(
-              "text-gray-200 text-base md:text-lg ",
+              "text-gray-50 text-base md:text-lg ",
               subTitleClasses
             )}
           >

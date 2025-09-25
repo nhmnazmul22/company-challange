@@ -9,8 +9,9 @@ const WhyChoose = () => {
     <Container>
       <div>
         <SectionHeading
-          title="Why Choose InnovateX?"
-          subTitle="We combine expertise, innovation, and dedication to deliver exceptional results."
+          title="Why Choose"
+          subTitle="We provide high-performance lubricants engineered to protect engines, enhance efficiency, and extend equipment life across every industry."
+          spanText="Pro Lubricant?"
         />
         <div className="mt-16 grid grid-cols-12 gap-8">
           {companyInfo.whyChoose.map((info) => (

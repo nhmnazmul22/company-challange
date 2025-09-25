@@ -9,13 +9,29 @@ export interface MenuItem {
   updatedAt?: string;
 }
 
-// Company Info Type
+// Service Drop Down Menus Items
+export interface ServiceDropDownItems {
+  lubricants: Array<{ id: string | number; label: string }>;
+  carParts: Array<{ id: string | number; label: string }>;
+  oils: Array<{ id: string | number; label: string }>;
+}
+
+// Slider Data
+export interface SliderData {
+  id: string | number;
+  title: string;
+  subTitle: string;
+  shortDes: string;
+  imgLink?: string;
+}
+
 export type OtherInfo = {
   id: string | number;
   icon: ForwardRefExoticComponent<
     Omit<LucideProps, "ref"> & RefAttributes<SVGSVGElement>
   >;
-  title: string;
+  title?: string;
+  label?: string;
   des: string;
 };
 
@@ -36,8 +52,8 @@ export interface CompanyInfo {
   updatedAt?: string;
 }
 
-// Services type
-export interface ServicesType {
+// Products type
+export interface ProductsType {
   id: string | number;
   imgLink: string;
   title: string;
@@ -47,6 +63,7 @@ export interface ServicesType {
   category: string;
   isFeatured: boolean;
   keyFeatures: Array<string>;
+  applications: Array<string>;
   createdAt?: string;
   updatedAt?: string;
 }

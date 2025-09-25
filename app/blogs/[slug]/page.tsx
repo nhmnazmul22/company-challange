@@ -1,7 +1,7 @@
 "use client";
 import RootLayout from "@/components/layout/RootLayout";
 import BlogDetails from "@/components/sections/BlogDetails";
-import ServiceCTA from "@/components/sections/ServiceCTA";
+import ServiceCTA from "@/components/sections/ProductCTA";
 import DynamicPageHeader from "@/components/ui/DynamicPageHeader";
 import blogs from "@/data/blogs";
 import { NextPage } from "next";

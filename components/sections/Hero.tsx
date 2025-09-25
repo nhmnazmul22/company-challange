@@ -1,56 +1,92 @@
+"use client";
 import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Parallax, Pagination, Navigation, Autoplay } from "swiper/modules";
+import { ArrowRight, Award, Download, Phone } from "lucide-react";
 import { Button } from "../ui/shadcnui/button";
-import { ArrowRight, Play } from "lucide-react";
-import Impact from "../ui/Impact";
-import companyInfo from "@/data/company";
 import Link from "next/link";
+
+// CSS Imports
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import "../../styles/swiper.css";
+import { sliderData } from "@/data/constant";
 
 const HeroSection = () => {
   return (
-    <section className=" bg-linear-to-bl from-violet-500 to-fuchsia-500 relative">
-      <div className="container ">
-        <div className="py-28 text-center max-w-[800px] mx-auto">
-          <div className="inline-flex items-center px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-6">
-            <span className="text-white text-sm">
-              🚀 Digital Solutions That Drive Growth
-            </span>
+    <Swiper
+      speed={600}
+      autoplay={{
+        delay: 3000,
+        disableOnInteraction: false,
+      }}
+      parallax={true}
+      pagination={{
+        clickable: true,
+      }}
+      navigation={true}
+      modules={[Parallax, Pagination, Navigation, Autoplay]}
+      className="mySwiper"
+    >
+      <div
+        slot="container-start"
+        className="parallax-bg"
+        data-swiper-parallax="-23%"
+      ></div>
+      {sliderData.map((data) => (
+        <SwiperSlide
+          key={data.id}
+          className="!flex !justify-start !items-center"
+        >
+          <div className="max-w-5xl relative max-lg:text-center">
+            <div className="inline-flex items-center px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-6">
+              <span className="text-white text-sm flex gap-2 items-center">
+                <Award size={16} /> ISO 9001:2015 Certified Excellence
+              </span>
+            </div>
+            <div>
+              <h1
+                className="text-4xl sm:text-5xl sm:leading-[60px] lg:text-7xl lg:leading-[90px] text-white font-semibold mb-3 "
+                data-swiper-parallax="-300"
+              >
+                {data.title}
+              </h1>
+              <h4
+                className="text-2xl lg:text-3xl font-medium "
+                data-swiper-parallax="-200"
+              >
+                {data.subTitle}
+              </h4>
+              <p
+                className="text-sm sm:text-base text-gray-200 font-normal mt-2"
+                data-swiper-parallax="-100"
+              >
+                {data.shortDes}
+              </p>
+            </div>
+            <div className="mt-5 space-x-6">
+              <Link href="/products">
+                <Button variant="default" size="lg">
+                  Explore Products
+                  <ArrowRight />
+                </Button>
+              </Link>
+              <Link href="/contact">
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="hover:bg-white hover:text-black hover:border-white hover:scale-103 duration-300"
+                >
+                  Get started
+                  <ArrowRight />
+                </Button>
+              </Link>
+            </div>
           </div>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold text-white">
-            Transform Your Business with Innovation
-          </h1>
-          <p className="text-gray-200 mt-4 max-w-[580px] mx-auto text-sm md:text-lg">
-            We create cutting-edge digital experiences that elevate your brand
-            and accelerate your business growth through strategic innovation.
-          </p>
-          <div className="flex justify-center items-center gap-5 mt-10">
-            <Link href="/contact">
-              <Button variant="secondary" className="sm:text-base sm:!p-6">
-                Get Started <ArrowRight />
-              </Button>
-            </Link>
-            <Link href="/gallery">
-              <Button variant="outline" className="sm:text-base sm:!p-6">
-                <Play /> View Our Work
-              </Button>
-            </Link>
-          </div>
-          <div className=" grid grid-cols-12 items-center max-sm:space-y-4 sm:gap-10 mt-14">
-            {companyInfo.ourImpact.map((impact, index) => (
-              <Impact
-                key={index}
-                impactNum={impact.impactNum}
-                impactTitle={impact.title}
-              />
-            ))}
-          </div>
-        </div>
-      </div>
-      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-white/60 rounded-full mt-2 animate-pulse"></div>
-        </div>
-      </div>
-    </section>
+        </SwiperSlide>
+      ))}
+    </Swiper>
   );
 };
 

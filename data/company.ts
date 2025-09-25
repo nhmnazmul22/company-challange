@@ -1,36 +1,40 @@
 import { CompanyInfo } from "@/types";
 import {
+  Cog,
+  Droplet,
   Eye,
+  Factory,
+  Globe,
+  Headphones,
   Heart,
+  Leaf,
   LocateFixed,
-  Shield,
-  Star,
-  UsersRound,
-  Zap,
+  ShieldCheck,
+  Wrench,
 } from "lucide-react";
 
 const companyInfo: CompanyInfo = {
   ourStory: {
     title: "Our Story",
-    des: "We are a forward-thinking digital agency specializing in innovative solutions that drive business growth. Our team combines creativity, technology, and strategic thinking to deliver exceptional results for our clients.",
+    des: "Pro Lubricant is a trusted leader in high-performance lubricants, oils, and greases for automotive, industrial, marine, and specialty applications. With years of expertise, we combine innovation, technology, and sustainability to deliver products that keep engines and machinery running at peak performance.",
     otherInfo: [
       {
         id: 1,
         icon: LocateFixed,
         title: "Our Mission",
-        des: "To empower businesses with cutting-edge digital solutions that drive growth, efficiency, and innovation in an ever-evolving digital landscape.",
+        des: "To provide premium lubricants that enhance performance, extend equipment life, and ensure reliability while promoting sustainability and innovation.",
       },
       {
         id: 2,
         icon: Eye,
         title: "Our Vision",
-        des: "To be the leading global partner for digital transformation, setting new standards for innovation and excellence in the industry.",
+        des: "To be the most trusted global lubricant partner, delivering superior solutions that empower industries, drivers, and communities worldwide.",
       },
       {
         id: 3,
         icon: Heart,
         title: "Our Values",
-        des: "We drive innovation, deliver client-focused solutions, uphold integrity, embrace learning, and build sustainable, scalable outcomes for lasting success",
+        des: "Quality, innovation, sustainability, and customer trust are at the heart of everything we do.",
       },
     ],
   },
@@ -63,27 +67,51 @@ const companyInfo: CompanyInfo = {
   whyChoose: [
     {
       id: 1,
-      icon: Zap,
-      title: "Innovation First",
-      des: "Cutting-edge solutions that push boundaries and set new industry standards.",
+      icon: Droplet,
+      title: "Engine Protection",
+      des: "Advanced formulations that safeguard engines and extend their lifespan.",
     },
     {
       id: 2,
-      icon: UsersRound,
-      title: "Expert Team",
-      des: "Seasoned professionals with deep expertise across multiple disciplines.",
+      icon: Cog,
+      title: "High Performance",
+      des: "Lubricants engineered for maximum efficiency and smooth operation.",
     },
     {
       id: 3,
-      icon: Shield,
-      title: "Reliable Results",
-      des: "Proven track record of delivering projects on time and exceeding expectations.",
+      icon: ShieldCheck,
+      title: "Trusted Reliability",
+      des: "Proven products that deliver consistent results across all conditions.",
     },
     {
       id: 4,
-      icon: Star,
-      title: "Quality Focus",
-      des: "Meticulous attention to detail ensuring the highest quality in every projects",
+      icon: Leaf,
+      title: "Eco-Friendly",
+      des: "Sustainable solutions designed to reduce environmental impact.",
+    },
+    {
+      id: 5,
+      icon: Globe,
+      title: "Global Standards",
+      des: "Certified quality meeting international benchmarks for safety and performance.",
+    },
+    {
+      id: 6,
+      icon: Headphones,
+      title: "Customer Support",
+      des: "Dedicated assistance ensuring smooth operations and client satisfaction.",
+    },
+    {
+      id: 7,
+      icon: Wrench,
+      title: "Wide Applications",
+      des: "Lubricants suitable for automotive, industrial, marine, and specialty needs.",
+    },
+    {
+      id: 8,
+      icon: Factory,
+      title: "Advanced Technology",
+      des: "Produced with cutting-edge manufacturing processes for superior quality.",
     },
   ],
 };

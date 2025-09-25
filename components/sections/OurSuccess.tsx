@@ -6,11 +6,11 @@ import { ourSuccess } from "@/data/constant";
 
 const OurSuccess = () => {
   return (
-    <div className="bg-linear-to-bl from-violet-500 to-fuchsia-500">
+    <div className="bg-gradient-to-r from-blue-500 to-indigo-600">
       <Container>
         <SectionHeading
           title="Our Success in Numbers"
-          subTitle="These numbers reflect our commitment to excellence and client satisfaction."
+          subTitle="These numbers showcase our expertise, reliability, and dedication to keeping engines and machinery running smoothly."
           titleClasses="text-white"
           subTitleClasses="text-gray-200"
         />
@@ -21,6 +21,7 @@ const OurSuccess = () => {
               impactNum={success.impactNum}
               impactTitle={success.impactTitle}
               numClasses="!text-3xl md:!text-4xl lg:!text-5xl mb-1"
+              titleClasses="text-gray-200"
             />
           ))}
         </div>

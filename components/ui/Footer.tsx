@@ -1,14 +1,7 @@
 import React from "react";
 import Logo from "./Logo";
 import Link from "next/link";
-import {
-  Github,
-  Linkedin,
-  Mail,
-  Map,
-  Phone,
-  Twitter,
-} from "lucide-react";
+import { Github, Linkedin, Mail, Map, Phone, Twitter } from "lucide-react";
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -24,8 +17,8 @@ const Footer = () => {
       <div className="container">
         <div className="grid grid-cols-12 gap-10 items-start">
           <div className="col-span-12 lg:col-span-3">
-            <div className="w-full  space-y-3">
-              <Logo textClass="text-white" />
+            <div className="w-full space-y-3">
+              <Logo isDark={true} />
               <p className="text-gray-300 text-sm max-w-[340px]">
                 Transforming ideas into digital reality with innovative
                 solutions that drive business growth.

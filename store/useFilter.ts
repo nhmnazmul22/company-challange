@@ -1,25 +1,25 @@
 import { create } from "zustand";
 
 type State = {
-  serviceFilterValue: string;
+  productFilterValue: string;
   galleryFilterValue: string;
   blogFilterValue: string;
 };
 
 type Action = {
-  setServiceFilterValue: (value: string) => void;
+  setProductFilterValue: (value: string) => void;
   setGalleryFilterValue: (value: string) => void;
   setBlogFilterValue: (value: string) => void;
 };
 
 const useFilter = create<State & Action>((set) => ({
-  serviceFilterValue: "all",
+  productFilterValue: "all",
   galleryFilterValue: "all",
   blogFilterValue: "all",
 
-  setServiceFilterValue: (value) =>
+  setProductFilterValue: (value) =>
     set(() => ({
-      serviceFilterValue: value,
+      productFilterValue: value,
     })),
   setGalleryFilterValue: (value) =>
     set(() => ({

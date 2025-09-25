@@ -9,8 +9,8 @@ const AboutPage: NextPage = ({}) => {
   return (
     <RootLayout>
       <PageHeader
-        title="About InnovateX Solutions"
-        subTitle="Transforming Ideas into Digital Reality"
+        title="About Pro Lubricant"
+        subTitle="Delivering high-performance lubricants that protect engines, enhance efficiency, and drive industries forward with innovation and reliability."
       />
       <OurStroy />
       <OurImpact />

@@ -3,6 +3,7 @@ import React from "react";
 
 type Props = {
   title: string;
+  spanText?: string;
   subTitle: string;
   titleClasses?: string;
   subTitleClasses?: string;
@@ -10,6 +11,7 @@ type Props = {
 
 const SectionHeading = ({
   title,
+  spanText,
   subTitle,
   titleClasses,
   subTitleClasses,
@@ -19,11 +21,11 @@ const SectionHeading = ({
       <h2
         className={cn("text-3xl sm:text-4xl font-semibold mb-3", titleClasses)}
       >
-        {title}
+        {title} <span className="text-accent">{spanText}</span>
       </h2>
       <p
         className={cn(
-          "text-sm sm:text-lg text-gray-600 max-w-[600px] mx-auto",
+          "text-sm sm:text-base text-gray-600 max-w-[600px] mx-auto",
           subTitleClasses
         )}
       >

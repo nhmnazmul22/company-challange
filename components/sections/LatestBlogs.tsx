@@ -21,7 +21,7 @@ const LatestBlogs = () => {
       </div>
       <div className="mt-14 text-center">
         <Link href="/blogs">
-          <Button variant="glowEffect" className="py-5 !px-8">
+          <Button variant="default" className="py-5 !px-8">
             View All Blogs <ArrowRight />
           </Button>
         </Link>
