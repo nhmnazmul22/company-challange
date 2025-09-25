@@ -19,7 +19,7 @@
   width: 130%;
   height: 100%;
   background-image: linear-gradient(120deg, #2563ebd2 30%, #2563eb4c),
-    url("/images/hero2.jpg");
+    url("/images/hero-bg.jpg");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
@@ -33,7 +33,6 @@
 .swiper-pagination .swiper-pagination-bullet-active {
   background: white !important;
 }
-
 
 @media screen and (max-width: 765px) {
   .swiper-slide {
