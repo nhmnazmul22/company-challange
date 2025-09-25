@@ -52,7 +52,7 @@ const BlogList = () => {
         <div className="mt-14 text-center">
           <Button
             onClick={loadMoreItems}
-            variant="glowEffect"
+            variant="primary"
             className="py-5 !px-8"
           >
             Load More

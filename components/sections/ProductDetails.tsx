@@ -67,7 +67,7 @@ const ProductDetails = ({ data }: Props) => {
             </div>
             <hr className="my-5" />
             <Link href="/contact">
-              <Button variant="glowEffect" className="w-full py-6 text-base">
+              <Button variant="primary" className="w-full py-6 text-base">
                 Get Started
               </Button>
             </Link>

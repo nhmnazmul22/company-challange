@@ -14,7 +14,7 @@ const ProductsCTA = () => {
         />
         <div className="flex justify-center items-center mt-10">
           <Link href="/contact">
-            <Button variant="glowEffect" className="sm:text-base sm:!p-6">
+            <Button variant="primary" className="sm:text-base sm:!p-6">
               Contact Us Today
             </Button>
           </Link>
