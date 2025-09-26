@@ -13,7 +13,7 @@ const WhyChoose = () => {
           subTitle="We provide high-performance lubricants engineered to protect engines, enhance efficiency, and extend equipment life across every industry."
           spanText="Pro Lubricant?"
         />
-        <div className="mt-16 grid grid-cols-12 gap-8">
+        <div className="mt-16 grid grid-cols-12 sm:gap-8">
           {companyInfo.whyChoose.map((info) => (
             <InfoCard key={info.id} info={info} />
           ))}

@@ -121,7 +121,7 @@
     @apply bg-background text-foreground;
   }
   .container {
-    @apply container mx-auto max-sm:px-4 px-2;
+    @apply container mx-auto px-6;
   }
 }
 

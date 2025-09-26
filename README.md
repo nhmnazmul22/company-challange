@@ -1,34 +1,40 @@
-## Website Pages Overview
+# Pro Lubricant Website Pages Overview
 
-### Home Page  
-The home page welcomes visitors with a strong **headline** and **call-to-action**. It highlights why people should choose us, showcases our main services, and shares company achievements. Visitors can explore client testimonials, learn about our process, and preview the latest blog posts. The page concludes with a clear call-to-action to guide them forward.  
+## Home Page
 
-### About Us Page  
-The about page introduces who we are and what we stand for. It shares our story, vision, and values, while also highlighting the milestones we’ve achieved. Visitors can get to know our team through short bios, photos, and social links.  
+The home page welcomes visitors with a strong **headline** and **call-to-action**, emphasizing premium lubricants and industrial oils. It highlights why customers should choose Pro Lubricant, showcases top products, and presents company achievements. Visitors can explore client testimonials, learn about our process, and preview the latest industry insights. The page concludes with a clear call-to-action for inquiries or purchases.
 
-### Services Page  
-The services page explains what we offer in a simple and clear way. Users can filter services by category, and at the end of the page, they will find a clear call-to-action to move forward.  
+## About Us Page
 
-### Service Details Page  
-This page provides detailed information about a specific service. It also includes a call-to-action that encourages users to contact us directly.  
+The about page introduces Pro Lubricant’s history, vision, and values. It shares milestones, company achievements, and sustainability initiatives. Visitors can get to know the team with short bios, photos, and social links, reinforcing trust and expertise.
 
-### Gallery Page  
-The gallery page showcases our recent work, company impact, and projects. Users can open a modal to view detailed project information.  
+## Products Page
 
-### Blogs Page  
-The blogs page presents valuable service-related content written by our team. Users can filter blogs by category for easy navigation.  
+The products page showcases our complete range of automotive, industrial, and specialty lubricants. Users can filter products by category, view key features, and access product details. Each product has a clear call-to-action to purchase or request more information.
 
-### Blog Details Page  
-On this page, users can read the full blog content and gain deeper insights. At the end of the page, a clear call-to-action encourages them to get in touch.  
+## Product Details Page
 
-### Contact Page  
-The contact page provides multiple ways for users to connect with us. It features a contact form managed with **Zustand**, where all submitted information is stored in the Zustand store.  
+This page provides detailed specifications, key benefits, usage instructions, and safety information for each product. High-quality images and organized sections ensure clarity. A call-to-action encourages users to contact sales or request a quote.
 
+## Gallery Page
 
+The gallery page displays company events, certifications, product applications, and facility images. Hover overlays reveal titles, and modals provide more information when images are clicked.
 
-✅ All pages are fully responsive and optimized for all devices.
+## Blogs Page
+
+The blogs page presents expert articles on lubrication technology, maintenance tips, and industry trends. Users can filter blogs by category to find relevant content quickly.
+
+## Blog Details Page
+
+Users can read full articles on product care, technical updates, and best practices. Each blog ends with a call-to-action to contact Pro Lubricant for consultation or purchases.
+
+## Contact Page
+
+The contact page provides multiple ways to connect, including a form managed with Zustand, email, phone, and office locations. Clear guidance ensures inquiries are directed to the right team efficiently.
 
 ---
+
+✅ All pages are fully responsive, optimized for performance, and designed for a professional lubricant brand experience.
 
 ### How to run the Application
 
@@ -45,7 +51,6 @@ The contact page provides multiple ways for users to connect with us. It feature
 > 💡 Use `dev` during development, `build` + `start` for production, and `lint`, `typecheck`, `test` to keep code quality high.
 
 ---
-
 
 ### File & Folder Structure
 

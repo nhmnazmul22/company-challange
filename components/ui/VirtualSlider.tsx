@@ -48,8 +48,8 @@ const VirtualSlider = () => {
           }
         })}
       </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
+      <CarouselPrevious className="max-sm:hidden" />
+      <CarouselNext className="max-sm:hidden" />
     </Carousel>
   );
 };

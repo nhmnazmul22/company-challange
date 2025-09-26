@@ -39,3 +39,10 @@
     padding: 0px;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none !important;
+  }
+}

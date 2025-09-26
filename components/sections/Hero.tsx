@@ -5,8 +5,6 @@ import { Parallax, Pagination, Navigation, Autoplay } from "swiper/modules";
 import { ArrowRight, Award } from "lucide-react";
 import { Button } from "@/components/ui/shadcnui/button";
 import Link from "next/link";
-
-// CSS Imports
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -32,15 +30,15 @@ const HeroSection = () => {
       <div
         slot="container-start"
         className="parallax-bg"
-        data-swiper-parallax="-23%"
+        data-swiper-parallax="-10%"
       ></div>
       {sliderData.map((data) => (
         <SwiperSlide
           key={data.id}
-          className="!flex !justify-start !items-center"
+          className="!flex !justify-start !items-center gap-20"
         >
           <div className="max-w-5xl relative max-lg:text-center">
-            <div className="inline-flex items-center px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-6">
+            <div className="max-sm:hidden inline-flex items-center px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-6">
               <span className="text-white text-sm flex gap-2 items-center">
                 <Award size={16} /> ISO 9001:2015 Certified Excellence
               </span>

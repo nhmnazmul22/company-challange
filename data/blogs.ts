@@ -223,5 +223,31 @@ const blogs: Array<Blog> = [
   },
 ];
 
+export const blogsCategory: Array<FilterValue> = [
+  {
+    id: "0",
+    label: "All",
+  },
+  {
+    id: "1",
+    label: "Automotive",
+  },
+  {
+    id: "2",
+    label: "Commercial",
+  },
+  {
+    id: "3",
+    label: "Motorcycle",
+  },
+  {
+    id: "4",
+    label: "Industrial",
+  },
+  {
+    id: "5",
+    label: "Marine",
+  },
+];
 
 export default blogs;

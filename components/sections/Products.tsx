@@ -33,12 +33,12 @@ const Products = () => {
   return (
     <Container>
       <div className="mt-20">
-        <div className="flex justify-between items-center gap-5">
+        <div className="flex max-sm:flex-col justify-between items-center gap-5">
           <SectionHeading
             title="All Products"
             subTitle={`Showing ${visibleProducts.length} of ${products.length} products`}
-            titleClasses="!text-3xl !mb-0 text-left"
-            subTitleClasses="!text-base text-left"
+            titleClasses="!text-3xl !mb-0 sm:text-left"
+            subTitleClasses="!text-base sm:text-left"
           />
           <Filter
             data={productsCategories}
@@ -46,7 +46,7 @@ const Products = () => {
             setValue={setProductFilterValue}
           />
         </div>
-        <div className="mt-10 grid grid-cols-4 gap-5 md:gap-10">
+        <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
           {visibleProducts.length > 0 ? (
             visibleProducts.map((product) => (
               <ServiceCard key={product.id} productInfo={product} />
