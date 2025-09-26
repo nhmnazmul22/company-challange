@@ -15,7 +15,6 @@ const Products = () => {
   const { setProductFilterValue, productFilterValue } = useFilter();
 
   const filteredProducts = products.filter((product) => {
-    console.log(productFilterValue);
     if (productFilterValue === "all") {
       return product;
     }
