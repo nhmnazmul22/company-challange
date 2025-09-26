@@ -30,7 +30,7 @@ const HeroSection = () => {
       <div
         slot="container-start"
         className="parallax-bg"
-        data-swiper-parallax="-10%"
+        data-swiper-parallax="-23%"
       ></div>
       {sliderData.map((data) => (
         <SwiperSlide

@@ -24,6 +24,7 @@
   -webkit-background-size: cover;
   background-size: cover;
   background-position: top left;
+  overflow: hidden;
 }
 
 .swiper-button-prev,
