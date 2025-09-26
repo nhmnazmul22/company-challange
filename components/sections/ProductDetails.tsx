@@ -19,7 +19,7 @@ const ProductDetails = ({ data }: Props) => {
   return (
     <Container>
       {/* Top Section */}
-      <div className="grid grid-cols-12 gap-10 lg:gap-16">
+      <div className="grid grid-cols-12 sm:gap-10 lg:gap-16">
         {/* Image */}
         <div className="col-span-12 lg:col-span-6 relative">
           <span className="flex justify-between w-full absolute left-0 top-4 px-3 z-50">
@@ -48,10 +48,12 @@ const ProductDetails = ({ data }: Props) => {
         </div>
 
         {/* Info */}
-        <div className="col-span-12 lg:col-span-6 flex flex-col justify-between">
-          <div className="space-y-4">
-            <h2 className="text-4xl font-bold text-gray-900">{data.title}</h2>
-            <p className="text-3xl text-accent font-semibold">
+        <div className="col-span-12 lg:col-span-6 flex flex-col justify-between max-sm:mt-10">
+          <div className="space-y-2 sm:space-y-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
+              {data.title}
+            </h2>
+            <p className="text-xl sm:text-3xl text-accent font-semibold">
               {formatPrice(data.price)}
             </p>
 
@@ -134,7 +136,7 @@ const ProductDetails = ({ data }: Props) => {
       </div>
 
       {/* Why Choose */}
-      <div className="grid grid-cols-12 gap-10 mt-28 mb-20">
+      <div className="grid grid-cols-12 max-sm:space-y-4 sm:gap-10 mt-28 mb-20">
         {companyInfo.whyChoose.map((info) => (
           <InfoCard key={info.id} info={info} />
         ))}
