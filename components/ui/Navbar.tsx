@@ -21,7 +21,7 @@ const Navbar = () => {
   const { isToggled, showMobileMenu } = useMobilMenu();
 
   return (
-    <nav className="bg-background backdrop-blur-md border-b border-border py-3 ">
+    <nav className="fixed right-0 top-0 left-0 z-[9999] bg-background backdrop-blur-md border-b border-border py-3 ">
       <div className="container">
         <div className="flex gap-2 justify-between items-center">
           <Logo />

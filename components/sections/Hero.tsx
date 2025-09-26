@@ -35,7 +35,7 @@ const HeroSection = () => {
       {sliderData.map((data) => (
         <SwiperSlide
           key={data.id}
-          className="!flex !justify-start !items-center gap-20"
+          className="!flex !justify-start !items-center"
         >
           <div className="max-w-5xl relative max-lg:text-center">
             <div className="max-sm:hidden inline-flex items-center px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-6">
