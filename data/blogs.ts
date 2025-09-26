@@ -3,7 +3,7 @@ import { Blog, FilterValue } from "@/types";
 const blogs: Array<Blog> = [
   {
     id: 1,
-    thumbnail: "/images/automotive.png",
+    thumbnail: "/images/products/automotive.png",
     title: "Why Quality Automotive Lubricants Matter",
     slug: "why-quality-automotive-lubricants-matter",
     shortDes:
@@ -25,7 +25,7 @@ const blogs: Array<Blog> = [
   },
   {
     id: 2,
-    thumbnail: "/images/automotive.png",
+    thumbnail: "/images/products/automotive.png",
     title: "Commercial Lubricants for Heavy-Duty Vehicles",
     slug: "commercial-lubricants-for-heavy-duty-vehicles",
     shortDes:
@@ -47,7 +47,7 @@ const blogs: Array<Blog> = [
   },
   {
     id: 3,
-    thumbnail: "/images/automotive.png",
+    thumbnail: "/images/products/automotive.png",
     title: "Motorcycle Oils for Peak Performance",
     slug: "motorcycle-oils-for-peak-performance",
     shortDes:
@@ -69,7 +69,7 @@ const blogs: Array<Blog> = [
   },
   {
     id: 4,
-    thumbnail: "/images/automotive.png",
+    thumbnail: "/images/products/automotive.png",
     title: "Industrial Lubricants for Machinery Efficiency",
     slug: "industrial-lubricants-for-machinery-efficiency",
     shortDes:
@@ -91,7 +91,7 @@ const blogs: Array<Blog> = [
   },
   {
     id: 5,
-    thumbnail: "/images/automotive.png",
+    thumbnail: "/images/products/automotive.png",
     title: "Marine Lubricants for Reliable Engine Performance",
     slug: "marine-lubricants-for-reliable-engine-performance",
     shortDes:
@@ -113,7 +113,7 @@ const blogs: Array<Blog> = [
   },
   {
     id: 6,
-    thumbnail: "/images/automotive.png",
+    thumbnail: "/images/products/automotive.png",
     title: "Transmission Fluids for Smooth Shifting",
     slug: "transmission-fluids-for-smooth-shifting",
     shortDes:
@@ -135,7 +135,7 @@ const blogs: Array<Blog> = [
   },
   {
     id: 7,
-    thumbnail: "/images/automotive.png",
+    thumbnail: "/images/products/automotive.png",
     title: "Brake Fluids: Safety Starts Here",
     slug: "brake-fluids-safety-starts-here",
     shortDes:
@@ -157,7 +157,7 @@ const blogs: Array<Blog> = [
   },
   {
     id: 8,
-    thumbnail: "/images/automotive.png",
+    thumbnail: "/images/products/automotive.png",
     title: "Coolants: Protecting Engines from Overheating",
     slug: "coolants-protecting-engines-from-overheating",
     shortDes:
@@ -179,7 +179,7 @@ const blogs: Array<Blog> = [
   },
   {
     id: 9,
-    thumbnail: "/images/automotive.png",
+    thumbnail: "/images/products/automotive.png",
     title: "Gear Oils: Keeping Transmission Systems Healthy",
     slug: "gear-oils-keeping-transmission-systems-healthy",
     shortDes:
@@ -201,7 +201,7 @@ const blogs: Array<Blog> = [
   },
   {
     id: 10,
-    thumbnail: "/images/automotive.png",
+    thumbnail: "/images/products/automotive.png",
     title: "Lithium Greases: Versatile Protection for Machinery",
     slug: "lithium-greases-versatile-protection-for-machinery",
     shortDes:
