@@ -9,21 +9,23 @@ import Process from "@/components/sections/Process";
 import LatestBlogs from "@/components/sections/LatestBlogs";
 import CTA from "@/components/sections/CTA";
 import BestCategories from "@/components/sections/BestCategories";
+import AboutUs from "@/components/sections/AboutUs";
 
 const Home: NextPage = ({}) => {
   return (
     <RootLayout>
       <HeroSection />
-      <WhyChoose />
+      <AboutUs />
       <BestCategories />
       <Featured />
+      <WhyChoose />
       <OurSuccess />
-      <Testimonial />
       <Process />
+      <Testimonial />
       <LatestBlogs />
       <CTA
-        title="Ready to Transform Your Business?"
-        subTitle="Let's discuss how we can help you achieve your goals with our innovative solutions."
+        title="Ready to Maximize Performance?"
+        subTitle="Let’s talk about how our high-quality lubricants can keep your engines, machines, and business running at their best."
       />
     </RootLayout>
   );

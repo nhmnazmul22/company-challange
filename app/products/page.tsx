@@ -9,7 +9,7 @@ const ProductsPage: NextPage = ({}) => {
     <RootLayout>
       <PageHeader
         title="Our Products & Services"
-        subTitle="Comprehensive solutions designed to drive your business forward with innovation and excellence."
+        subTitle="Explore our wide range of high-quality lubricants, greases, and specialty oils designed to keep your machines running smoothly and efficiently."
       />
       <Products />
       <ProductCTA />

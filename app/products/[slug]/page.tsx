@@ -1,34 +1,34 @@
 "use client";
-import RootLayout from "@/components/layout/RootLayout";
-import ServiceDetails from "@/components/sections/ProductDetails";
-import NotFound from "@/components/skeleton/NotFound";
-import DynamicPageHeader from "@/components/ui/DynamicPageHeader";
-import services from "@/data/products";
 import { NextPage } from "next";
 import { useParams } from "next/navigation";
+import RootLayout from "@/components/layout/RootLayout";
+import ProductDetails from "@/components/sections/ProductDetails";
+import NotFound from "@/components/skeleton/NotFound";
+import DynamicPageHeader from "@/components/ui/DynamicPageHeader";
+import products from "@/data/products";
 
-const ServiceDetailsPage: NextPage = ({}) => {
+const ProductDetailsPage: NextPage = ({}) => {
   const { slug }: { slug: string } = useParams();
-  const service = services.find((service) => service.slug.includes(slug));
+  const product = products.find((product) => product.slug.includes(slug));
 
   return (
     <RootLayout>
-      {service ? (
+      {product ? (
         <>
           <DynamicPageHeader
-            parentLink="services"
-            dynamicLink={service.title}
+            parentLink="products"
+            dynamicLink={product.title}
           />
-          <ServiceDetails data={service} />
+          <ProductDetails data={product} />
         </>
       ) : (
         <NotFound
           title="404"
-          des="Service details not found, Please try again."
+          des="Product details not found, Please try again."
         />
       )}
     </RootLayout>
   );
 };
 
-export default ServiceDetailsPage;
+export default ProductDetailsPage;

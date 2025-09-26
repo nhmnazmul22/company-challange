@@ -1,7 +1,7 @@
 import { TestimonialType } from "@/types";
-import { Quote } from "lucide-react";
 import Image from "next/image";
 import React from "react";
+import Starts from "@/components/ui/Starts";
 
 type Props = {
   data: TestimonialType;
@@ -9,12 +9,8 @@ type Props = {
 
 const TestimonialCard = ({ data }: Props) => {
   return (
-    <div className="col-span-12 last:max-lg:col-span-12 md:col-span-6 lg:col-span-4 bg-linear-to-b from-white to-gray-100 shadow hover:shadow-lg duration-300 px-5 py-8 rounded-xl border border-gray-100 space-y-3">
-      <span>
-        <Quote />
-      </span>
-      <p className="mt-3 text-base italic text-gray-600">{`"${data.comment}"`}</p>
-      <div className="flex gap-3 items-center mt-8">
+    <div className="bg-linear-to-b from-white to-gray-100 shadow p-5 rounded-xl border border-gray-100 space-y-3 min-h-[280px] flex flex-col justify-center items-start">
+      <div className="flex gap-3 items-center">
         <figure className="w-[60] h-[60] rounded-full overflow-hidden border border-gray-100">
           <Image
             src={data.authorImg || "/images/avatar.png"}
@@ -29,6 +25,8 @@ const TestimonialCard = ({ data }: Props) => {
           <p className="text-gray-600 text-sm">{data.authorPosition}</p>
         </div>
       </div>
+      <p className="mt-3 text-base italic text-gray-600">{`"${data.comment}"`}</p>
+      <Starts rating={5} />
     </div>
   );
 };

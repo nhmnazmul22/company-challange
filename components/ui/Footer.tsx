@@ -8,8 +8,8 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
 } from "@/components/ui/shadcnui/navigation-menu";
-import { navItems, serviceLinks } from "@/data/constant";
-import FTSecTitle from "./FTSecTitle";
+import { navItems, serviceDropDownItems } from "@/data/constant";
+import FTSecTitle from "@/components/ui/FTSecTitle";
 
 const Footer = () => {
   return (
@@ -19,7 +19,7 @@ const Footer = () => {
           <div className="col-span-12 lg:col-span-3">
             <div className="w-full space-y-3">
               <Logo isDark={true} />
-              <p className="text-gray-300 text-sm max-w-[340px]">
+              <p className="text-gray-300 text-sm max-w-[340px] mt-3">
                 Transforming ideas into digital reality with innovative
                 solutions that drive business growth.
               </p>
@@ -42,7 +42,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="col-span-12 sm:col-span-6 lg:col-span-3">
+          <div className="col-span-12 sm:col-span-4 lg:col-span-2">
             <FTSecTitle title="Quick Links" />
             <NavigationMenu>
               <NavigationMenuList className="flex flex-col items-start gap-3">
@@ -56,19 +56,43 @@ const Footer = () => {
               </NavigationMenuList>
             </NavigationMenu>
           </div>
-          <div className="col-span-12 sm:col-span-6 lg:col-span-3">
-            <FTSecTitle title="Services" />
-            <NavigationMenu>
-              <NavigationMenuList className="flex flex-col items-start gap-3">
-                {serviceLinks.map((item) => (
-                  <NavigationMenuItem key={item.label}>
-                    <NavigationMenuLink asChild className="p-0 text-gray-300">
-                      <Link href={item.link}>{item.label}</Link>
-                    </NavigationMenuLink>
-                  </NavigationMenuItem>
-                ))}
-              </NavigationMenuList>
-            </NavigationMenu>
+          <div className="col-span-12 sm:col-span-8 lg:col-span-4">
+            <FTSecTitle title="Best Products" />
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 items-start">
+              <NavigationMenu>
+                <NavigationMenuList className="flex flex-col items-start gap-2">
+                  {serviceDropDownItems.lubricants.map((item) => (
+                    <NavigationMenuItem key={item.label}>
+                      <NavigationMenuLink asChild className="p-0 text-gray-300">
+                        <Link href="/products">{item.label}</Link>
+                      </NavigationMenuLink>
+                    </NavigationMenuItem>
+                  ))}
+                </NavigationMenuList>
+              </NavigationMenu>
+              <NavigationMenu>
+                <NavigationMenuList className="flex flex-col items-start gap-3">
+                  {serviceDropDownItems.carParts.map((item) => (
+                    <NavigationMenuItem key={item.label}>
+                      <NavigationMenuLink asChild className="p-0 text-gray-300">
+                        <Link href="/products">{item.label}</Link>
+                      </NavigationMenuLink>
+                    </NavigationMenuItem>
+                  ))}
+                </NavigationMenuList>
+              </NavigationMenu>
+              <NavigationMenu>
+                <NavigationMenuList className="flex flex-col items-start gap-3">
+                  {serviceDropDownItems.oils.map((item) => (
+                    <NavigationMenuItem key={item.label}>
+                      <NavigationMenuLink asChild className="p-0 text-gray-300">
+                        <Link href="/products">{item.label}</Link>
+                      </NavigationMenuLink>
+                    </NavigationMenuItem>
+                  ))}
+                </NavigationMenuList>
+              </NavigationMenu>
+            </div>
           </div>
           <div className="col-span-12 lg:col-span-3">
             <FTSecTitle title="Contact Info" />

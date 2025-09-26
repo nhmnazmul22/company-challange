@@ -1,64 +1,67 @@
 "use client";
 import React, { useState } from "react";
-import Container from "../layout/Container";
-import Filter from "./Filter";
-import SectionHeading from "../ui/SectionHeading";
-import services, { productsCategories } from "@/data/products";
-import ServiceCard from "../ui/ProductCard";
+import Container from "@/components/layout/Container";
+import Filter from "@/components/ui/Filter";
+import SectionHeading from "@/components/ui/SectionHeading";
+import products, { productsCategories } from "@/data/products";
+import ServiceCard from "@/components/ui/ProductCard";
 import useFilter from "@/store/useFilter";
+import { Button } from "@/components/ui/shadcnui/button";
+import NotFound from "@/components/skeleton/NotFound";
 import { firstLatterUpper, lowerCaseText } from "@/lib/utils";
-import { Button } from "../ui/shadcnui/button";
-import NotFound from "../skeleton/NotFound";
 
 const Products = () => {
-  const [showNum, setShowNum] = useState<number>(6);
+  const [showNum, setShowNum] = useState<number>(8);
   const { setProductFilterValue, productFilterValue } = useFilter();
 
-  const filteredServices = services.filter((service) => {
+  const filteredProducts = products.filter((product) => {
+    console.log(productFilterValue);
     if (productFilterValue === "all") {
-      return service;
+      return product;
     }
     const categoryMatch =
-      lowerCaseText(service.category) === lowerCaseText(productFilterValue);
+      lowerCaseText(product.category) === lowerCaseText(productFilterValue);
 
     return categoryMatch;
   });
 
-  const visibleServices = filteredServices.slice(0, showNum);
+  const visibleProducts = filteredProducts.slice(0, showNum);
 
   const loadMoreItems = () => {
-    setShowNum((prev) => prev + 6);
+    setShowNum((prev) => prev + 8);
   };
 
   return (
     <Container>
-      <Filter
-        data={productsCategories}
-        value={productFilterValue}
-        setValue={setProductFilterValue}
-      />
       <div className="mt-20">
-        <SectionHeading
-          title="All Services"
-          subTitle={`Showing ${visibleServices.length} of ${services.length} services`}
-          titleClasses="!text-3xl !mb-0"
-          subTitleClasses="!text-base"
-        />
-        <div className="mt-10 grid grid-cols-12 gap-5 md:gap-10">
-          {visibleServices.length > 0 ? (
-            visibleServices.map((service) => (
-              <ServiceCard key={service.id} productInfo={service} />
+        <div className="flex justify-between items-center gap-5">
+          <SectionHeading
+            title="All Products"
+            subTitle={`Showing ${visibleProducts.length} of ${products.length} products`}
+            titleClasses="!text-3xl !mb-0 text-left"
+            subTitleClasses="!text-base text-left"
+          />
+          <Filter
+            data={productsCategories}
+            value={productFilterValue}
+            setValue={setProductFilterValue}
+          />
+        </div>
+        <div className="mt-10 grid grid-cols-4 gap-5 md:gap-10">
+          {visibleProducts.length > 0 ? (
+            visibleProducts.map((product) => (
+              <ServiceCard key={product.id} productInfo={product} />
             ))
           ) : (
             <NotFound
-              title="Services not found"
+              title="Products not found"
               des={`${firstLatterUpper(
                 productFilterValue
               )} products not added now, we will added as soon as possible`}
             />
           )}
         </div>
-        {visibleServices.length > 0 && (
+        {visibleProducts.length > 0 && (
           <div className="mt-14 text-center">
             <Button
               onClick={loadMoreItems}

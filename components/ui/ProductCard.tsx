@@ -1,10 +1,10 @@
 import React from "react";
-import { Badge } from "./shadcnui/badge";
+import { Badge } from "@/components/ui/shadcnui/badge";
 import Image from "next/image";
 import { ProductsType } from "@/types";
-import { cn, firstLatterUpper, formatPrice } from "@/lib/utils";
+import { firstLatterUpper } from "@/lib/utils";
 import Link from "next/link";
-import { Button } from "./shadcnui/button";
+import { Button } from "@/components/ui/shadcnui/button";
 import { ArrowRight } from "lucide-react";
 import {
   Card,
@@ -49,19 +49,6 @@ const ProductCard = ({ productInfo }: Props) => {
             {productInfo.des}
           </CardDescription>
         </div>
-        {/* <div className="mt-5">
-          <p className="font-medium mb-1">Key Features:</p>
-          <div className="space-x-2 space-y-1">
-            {productInfo.keyFeatures.slice(0, 3).map((feature, index) => (
-              <Badge key={index} variant="outline">
-                {feature}
-              </Badge>
-            ))}
-            <Badge variant="outline">
-              {productInfo.keyFeatures.length - 3} More +
-            </Badge>
-          </div>
-        </div> */}
       </CardContent>
       <CardFooter className="p-0 mt-4">
         <Link href={`/products/${productInfo.slug}`} className="w-full">

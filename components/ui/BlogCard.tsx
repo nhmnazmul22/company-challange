@@ -9,11 +9,11 @@ import {
 } from "@/components/ui/shadcnui/card";
 import { Blog } from "@/types";
 import { firstLatterUpper, showShortText } from "@/lib/utils";
-import { Badge } from "./shadcnui/badge";
+import { Badge } from "@/components/ui/shadcnui/badge";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import { Button } from "./shadcnui/button";
+import { Button } from "@/components/ui/shadcnui/button";
 
 type Props = {
   data: Blog;
@@ -21,12 +21,12 @@ type Props = {
 
 const BlogCard = ({ data }: Props) => {
   return (
-    <Card className="col-span-12 md:col-span-6 lg:col-span-4 min-h-[500px] p-0 gap-0 group hover:shadow-glow duration-300 h-fit">
+    <Card className="col-span-12 md:col-span-6 lg:col-span-4 p-0 gap-0 group hover:shadow-xl duration-300">
       <CardHeader className="p-0 relative">
         <span className="flex justify-between w-full absolute left-0 top-2.5 px-3 z-50">
           <Badge variant="secondary">{firstLatterUpper(data?.category)}</Badge>
         </span>
-        <figure className="w-[full] h-[300px]">
+        <figure className="w-[full] h-[280px]">
           <Image
             src={data?.thumbnail || "https://placehold.co/600x400/png"}
             width={1480}

@@ -1,13 +1,14 @@
 "use client";
 import React, { useState } from "react";
-import Container from "../layout/Container";
-import Filter from "./Filter";
-import blogs, { blogsCategory } from "@/data/blogs";
+import Container from "@/components/layout/Container";
+import Filter from "@/components/ui/Filter";
+import blogs from "@/data/blogs";
 import useFilter from "@/store/useFilter";
 import { firstLatterUpper, lowerCaseText } from "@/lib/utils";
-import NotFound from "../skeleton/NotFound";
-import BlogCard from "../ui/BlogCard";
-import { Button } from "../ui/shadcnui/button";
+import NotFound from "@/components/skeleton/NotFound";
+import BlogCard from "@/components/ui/BlogCard";
+import { Button } from "@/components/ui/shadcnui/button";
+import { productsCategories } from "@/data/products";
 
 const BlogList = () => {
   const [showNum, setShowNum] = useState<number>(6);
@@ -32,7 +33,7 @@ const BlogList = () => {
   return (
     <Container>
       <Filter
-        data={blogsCategory}
+        data={productsCategories}
         value={blogFilterValue}
         setValue={setBlogFilterValue}
       />

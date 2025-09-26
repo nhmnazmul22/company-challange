@@ -1,6 +1,5 @@
 import {
   ContactInfo,
-  Impact,
   MenuItem,
   Process,
   ServiceDropDownItems,
@@ -115,43 +114,6 @@ export const serviceDropDownItems: ServiceDropDownItems = {
     },
   ],
 };
-export const serviceLinks: Array<MenuItem> = [
-  {
-    label: "Consulting",
-    link: "/services",
-  },
-  {
-    label: "Digital Transform",
-    link: "/services",
-  },
-  {
-    label: "Development",
-    link: "/services",
-  },
-  {
-    label: "Design",
-    link: "/services",
-  },
-];
-
-export const ourSuccess: Array<Impact> = [
-  {
-    impactNum: "1000+",
-    impactTitle: "Vehicles Served",
-  },
-  {
-    impactNum: "99%",
-    impactTitle: "Client Satisfaction",
-  },
-  {
-    impactNum: "50+",
-    impactTitle: "Lubricant Products",
-  },
-  {
-    impactNum: "24/7",
-    impactTitle: "Technical Support",
-  },
-];
 
 export const ourProcess: Array<Process> = [
   {

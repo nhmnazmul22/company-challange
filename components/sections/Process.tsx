@@ -1,8 +1,8 @@
 import React from "react";
-import Container from "../layout/Container";
-import SectionHeading from "../ui/SectionHeading";
+import Container from "@/components/layout/Container";
+import SectionHeading from "@/components/ui/SectionHeading";
 import { ourProcess } from "@/data/constant";
-import ProcessCard from "../ui/ProcessCard";
+import ProcessCard from "@/components/ui/ProcessCard";
 
 const Process = () => {
   return (

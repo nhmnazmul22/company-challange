@@ -1,7 +1,7 @@
 import React from "react";
-import Container from "../layout/Container";
-import SectionHeading from "../ui/SectionHeading";
-import { Button } from "../ui/shadcnui/button";
+import Container from "@/components/layout/Container";
+import SectionHeading from "@/components/ui/SectionHeading";
+import { Button } from "@/components/ui/shadcnui/button";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 

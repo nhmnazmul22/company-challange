@@ -1,7 +1,7 @@
 import React from "react";
-import Container from "../layout/Container";
-import SectionHeading from "../ui/SectionHeading";
-import { Button } from "../ui/shadcnui/button";
+import Container from "@/components/layout/Container";
+import SectionHeading from "@/components/ui/SectionHeading";
+import { Button } from "@/components/ui/shadcnui/button";
 import Link from "next/link";
 
 const ProductsCTA = () => {
@@ -9,8 +9,8 @@ const ProductsCTA = () => {
     <div className="bg-gray-50">
       <Container>
         <SectionHeading
-          title="Need a Custom Solution?"
-          subTitle="Can't find exactly what you're looking for? Let's discuss how we can create a tailored solution for your unique needs."
+          title="Need a Custom Lubricant Solution?"
+          subTitle="Can’t find the exact lubricant, grease, or oil you need? Let’s work together to create a tailored solution for your machinery and equipment requirements."
         />
         <div className="flex justify-center items-center mt-10">
           <Link href="/contact">

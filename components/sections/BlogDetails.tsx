@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 import { Calendar, User } from "lucide-react";
 import { formatISODate } from "@/lib/utils";
-import { Badge } from "../ui/shadcnui/badge";
+import { Badge } from "@/components/ui/shadcnui/badge";
 
 type Props = {
   data: Blog;

@@ -1,8 +1,8 @@
 import React from "react";
-import Container from "../layout/Container";
-import SectionHeading from "../ui/SectionHeading";
+import Container from "@/components/layout/Container";
+import SectionHeading from "@/components/ui/SectionHeading";
 import companyInfo from "@/data/company";
-import Impact from "../ui/Impact";
+import Impact from "@/components/ui/Impact";
 
 const OurImpact = () => {
   return (

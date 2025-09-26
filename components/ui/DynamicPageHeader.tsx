@@ -9,7 +9,7 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/shadcnui/breadcrumb";
 import { firstLatterUpper } from "@/lib/utils";
-import { Button } from "./shadcnui/button";
+import { Button } from "@/components/ui/shadcnui/button";
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
 

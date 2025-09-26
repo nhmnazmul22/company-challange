@@ -1,11 +1,11 @@
 import React from "react";
-import Container from "../layout/Container";
-import SectionHeading from "../ui/SectionHeading";
+import Container from "@/components/layout/Container";
+import SectionHeading from "@/components/ui/SectionHeading";
 import services from "@/data/products";
-import { Button } from "../ui/shadcnui/button";
+import { Button } from "@/components/ui/shadcnui/button";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
-import ProductCard from "../ui/ProductCard";
+import ProductCard from "@/components/ui/ProductCard";
 
 const Featured = () => {
   const featuredProducts = services.filter((service) => service.isFeatured);

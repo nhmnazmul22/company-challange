@@ -3,287 +3,250 @@ import { Blog, FilterValue } from "@/types";
 const blogs: Array<Blog> = [
   {
     id: 1,
-    thumbnail: "/images/technology.jpg",
-    title: "Driving Digital Transformation with Technology",
-    slug: "driving-digital-transformation-with-technology",
+    thumbnail: "/images/automotive.png",
+    title: "Why Quality Automotive Lubricants Matter",
+    slug: "why-quality-automotive-lubricants-matter",
     shortDes:
-      "In today’s competitive market, digital transformation is no longer optional. Companies must embrace modern technologies to stay ahead. This article explores the tools and strategies that help businesses thrive in a digital-first world.",
+      "High-performance automotive lubricants protect engines, improve fuel efficiency, and extend vehicle life. Learn why choosing the right lubricant is critical for every car owner.",
     des: `
       <h2>Introduction</h2>
-      <p><b>Digital transformation</b> is more than just adopting technology—it's about reshaping how businesses operate. 
-      From customer experience to internal processes, the right digital tools can create lasting impact.</p>
-
-      <h3>Key Areas of Transformation</h3>
+      <p><b>Automotive lubricants</b> reduce friction, cool engines, and prevent wear. They ensure smooth operation and long engine life.</p>
+      <h3>Key Benefits</h3>
       <ul>
-        <li><b>Cloud adoption:</b> Scale faster and reduce costs.</li>
-        <li><b>Automation:</b> Improve efficiency by reducing repetitive tasks.</li>
-        <li><b>Data-driven decision-making:</b> Leverage analytics for growth.</li>
+        <li><b>Engine Protection:</b> Prevents damage and reduces maintenance costs.</li>
+        <li><b>Fuel Efficiency:</b> Enhances engine performance and reduces consumption.</li>
+        <li><b>Longevity:</b> Keeps engines running longer under extreme conditions.</li>
       </ul>
-
-      <p>Agencies play a vital role in guiding businesses through this journey, ensuring technology investments align with strategic goals.</p>
     `,
-    category: "Technology",
-    tags: ["Tech", "Digital Transformation", "Innovation"],
-    authorInfo: {
-      profilePicture: "/images/avatar.png",
-      name: "John Doe",
-    },
+    category: "Automotive",
+    tags: ["Automotive", "Engine Care", "Lubricants"],
+    authorInfo: { profilePicture: "/images/avatar.png", name: "John Doe" },
     createdAt: "2025-08-01T00:00:00.000Z",
   },
   {
     id: 2,
-    thumbnail: "/images/consulting.jpg",
-    title: "Consulting Strategies for Modern Businesses",
-    slug: "consulting-strategies-for-modern-businesses",
+    thumbnail: "/images/automotive.png",
+    title: "Commercial Lubricants for Heavy-Duty Vehicles",
+    slug: "commercial-lubricants-for-heavy-duty-vehicles",
     shortDes:
-      "Consulting is about solving real business challenges with actionable strategies. Whether it’s scaling operations or rethinking market approaches, expert consultancy ensures organizations move with clarity and purpose.",
+      "Commercial fleets require durable lubricants that reduce breakdowns and maximize uptime. Discover how premium oils enhance fleet reliability and performance.",
     des: `
-      <h2>Why Consulting Matters</h2>
-      <p>Every business faces challenges. From <b>inefficient workflows</b> to <b>market expansion</b>, 
-      the right consulting approach can unlock opportunities and minimize risks.</p>
-
-      <h3>Consulting Services</h3>
+      <h2>Importance of Commercial Lubricants</h2>
+      <p>Heavy-duty vehicles need lubricants that handle long hours, heavy loads, and tough conditions. Proper lubrication ensures minimal downtime and consistent performance.</p>
+      <h3>Benefits</h3>
       <ul>
-        <li>Business process optimization</li>
-        <li>Strategic growth planning</li>
-        <li>Change management</li>
+        <li><b>Durability:</b> Performs well under stress and long journeys.</li>
+        <li><b>Reduced Downtime:</b> Fewer breakdowns and maintenance issues.</li>
+        <li><b>Cost Efficiency:</b> Longer drain intervals save money.</li>
       </ul>
-
-      <p>Agencies bring industry knowledge and proven frameworks that help companies implement strategies effectively.</p>
     `,
-    category: "Consulting",
-    tags: ["Consulting", "Business Strategy", "Advisory"],
-    authorInfo: {
-      profilePicture: "/images/avatar.png",
-      name: "John Doe",
-    },
-    createdAt: "2025-08-05T00:00:00.000Z",
+    category: "Commercial",
+    tags: ["Commercial", "Fleet", "Lubricants"],
+    authorInfo: { profilePicture: "/images/avatar.png", name: "John Doe" },
+    createdAt: "2025-08-02T00:00:00.000Z",
   },
   {
     id: 3,
-    thumbnail: "/images/design.jpg",
-    title: "Creative Design That Makes Brands Stand Out",
-    slug: "creative-design-that-makes-brands-stand-out",
+    thumbnail: "/images/automotive.png",
+    title: "Motorcycle Oils for Peak Performance",
+    slug: "motorcycle-oils-for-peak-performance",
     shortDes:
-      "Good design is more than visuals—it communicates values, builds trust, and enhances brand recognition. Agencies must blend creativity with strategy to design experiences that truly connect with audiences.",
+      "Specialized motorcycle oils provide engine protection, smooth gear shifting, and ride comfort. Learn why riders should invest in high-quality lubricants.",
     des: `
-      <h2>The Role of Design</h2>
-      <p><b>Design</b> defines how customers perceive a brand. It’s not just about aesthetics, 
-      but also about usability, emotion, and storytelling.</p>
-
-      <h3>Essential Design Services</h3>
+      <h2>Why Motorcycle Oils Matter</h2>
+      <p>Motorcycle engines operate at high revs and require precise lubrication. Using premium oils reduces engine wear and improves performance.</p>
+      <h3>Advantages</h3>
       <ul>
-        <li>Brand identity and logo creation</li>
-        <li>Web and mobile UI/UX design</li>
-        <li>Marketing materials & campaign assets</li>
+        <li><b>Heat Resistance:</b> Protects engine in hot weather and long rides.</li>
+        <li><b>Smoother Gear Shifts:</b> Enhances ride experience and comfort.</li>
+        <li><b>Engine Longevity:</b> Minimizes deposits and keeps engines healthy.</li>
       </ul>
-
-      <p>When done right, design builds strong emotional connections between businesses and their customers.</p>
     `,
-    category: "Design",
-    tags: ["Design", "UI/UX", "Branding"],
-    authorInfo: {
-      profilePicture: "/images/avatar.png",
-      name: "John Doe",
-    },
-    createdAt: "2025-08-08T00:00:00.000Z",
+    category: "Motorcycle",
+    tags: ["Motorcycle", "Engine Care", "Lubricants"],
+    authorInfo: { profilePicture: "/images/avatar.png", name: "John Doe" },
+    createdAt: "2025-08-03T00:00:00.000Z",
   },
   {
     id: 4,
-    thumbnail: "/images/marketing.jpg",
-    title: "Marketing Strategies for the Digital Era",
-    slug: "marketing-strategies-for-the-digital-era",
+    thumbnail: "/images/automotive.png",
+    title: "Industrial Lubricants for Machinery Efficiency",
+    slug: "industrial-lubricants-for-machinery-efficiency",
     shortDes:
-      "Digital marketing has transformed how companies reach and engage with audiences. Agencies must combine creativity, data, and technology to build strategies that deliver measurable results.",
+      "Industrial lubricants reduce friction, prevent overheating, and extend equipment life. Explore how these oils power modern factories and production lines.",
     des: `
-      <h2>Modern Marketing Essentials</h2>
-      <p><b>Marketing</b> today is about creating personalized experiences at scale. 
-      From content to advertising, every touchpoint matters.</p>
-
-      <h3>Effective Marketing Tactics</h3>
+      <h2>Importance of Industrial Lubricants</h2>
+      <p>Machines and heavy equipment rely on high-quality lubrication for optimal performance. Proper oils reduce wear and operational costs.</p>
+      <h3>Benefits</h3>
       <ul>
-        <li>Search Engine Optimization (SEO)</li>
-        <li>Social media and influencer campaigns</li>
-        <li>Email and automation-based marketing</li>
+        <li><b>Friction Reduction:</b> Ensures smooth machinery operation.</li>
+        <li><b>Heat Control:</b> Prevents overheating and damage.</li>
+        <li><b>Extended Equipment Life:</b> Reduces long-term maintenance expenses.</li>
       </ul>
-
-      <p>Agencies provide the expertise to align these strategies with business goals, ensuring growth and visibility.</p>
     `,
-    category: "Marketing",
-    tags: ["Marketing", "Digital", "SEO", "Social Media"],
-    authorInfo: {
-      profilePicture: "/images/avatar.png",
-      name: "John Doe",
-    },
-    createdAt: "2025-08-12T00:00:00.000Z",
+    category: "Industrial",
+    tags: ["Industrial", "Machinery", "Lubricants"],
+    authorInfo: { profilePicture: "/images/avatar.png", name: "John Doe" },
+    createdAt: "2025-08-04T00:00:00.000Z",
   },
   {
     id: 5,
-    thumbnail: "/images/technology.jpg",
-    title: "Building Scalable Mobile Applications",
-    slug: "building-scalable-mobile-applications",
+    thumbnail: "/images/automotive.png",
+    title: "Marine Lubricants for Reliable Engine Performance",
+    slug: "marine-lubricants-for-reliable-engine-performance",
     shortDes:
-      "Mobile applications are the backbone of modern customer engagement. Businesses rely on well-built apps to deliver value, convenience, and seamless experiences on the go.",
+      "Marine lubricants protect engines and reduce corrosion in challenging sea conditions. Learn how premium oils enhance safety and efficiency on vessels.",
     des: `
-      <h2>The Power of Mobile</h2>
-      <p>From shopping to social interactions, mobile apps shape daily life. 
-      Agencies help companies transform ideas into <b>scalable mobile solutions</b>.</p>
-
-      <h3>Key Development Areas</h3>
+      <h2>Why Marine Lubricants Are Critical</h2>
+      <p>Saltwater, humidity, and continuous operation demand specialized oils. Marine lubricants protect engines and reduce maintenance costs.</p>
+      <h3>Key Advantages</h3>
       <ul>
-        <li>Cross-platform apps with React Native and Flutter</li>
-        <li>Performance optimization and scalability</li>
-        <li>App store launch & post-release support</li>
+        <li><b>Corrosion Protection:</b> Shields engine parts from saltwater damage.</li>
+        <li><b>High Load Capacity:</b> Performs under extreme stress.</li>
+        <li><b>Operational Safety:</b> Ensures reliable performance at sea.</li>
       </ul>
-
-      <p>Scalable mobile applications ensure businesses stay connected with customers anytime, anywhere.</p>
     `,
-    category: "Technology",
-    tags: ["Mobile", "App Development", "React Native"],
-    authorInfo: {
-      profilePicture: "/images/avatar.png",
-      name: "John Doe",
-    },
-    createdAt: "2025-08-16T00:00:00.000Z",
+    category: "Marine",
+    tags: ["Marine", "Engines", "Lubricants"],
+    authorInfo: { profilePicture: "/images/avatar.png", name: "John Doe" },
+    createdAt: "2025-08-05T00:00:00.000Z",
   },
   {
     id: 6,
-    thumbnail: "/images/consulting.jpg",
-    title: "Business Strategy and Innovation",
-    slug: "business-strategy-and-innovation",
+    thumbnail: "/images/automotive.png",
+    title: "Transmission Fluids for Smooth Shifting",
+    slug: "transmission-fluids-for-smooth-shifting",
     shortDes:
-      "A well-crafted business strategy ensures sustainable growth. Agencies combine market research, innovation, and execution plans to help companies navigate challenges and capture opportunities.",
+      "Transmission fluids ensure smooth gear operation, prevent wear, and extend gearbox life. Discover how selecting the right fluid keeps your vehicle running perfectly.",
     des: `
-      <h2>Why Strategy Matters</h2>
-      <p>Without a clear strategy, even strong businesses risk falling behind. 
-      <b>Strategic planning</b> aligns operations, people, and goals for long-term success.</p>
-
-      <h3>Core Elements of a Winning Strategy</h3>
+      <h2>Role of Transmission Fluids</h2>
+      <p>Automatic and manual gearboxes rely on high-quality fluids for smooth, efficient operation. Premium fluids reduce wear and improve shift response.</p>
+      <h3>Benefits</h3>
       <ul>
-        <li>Market research and competitive analysis</li>
-        <li>Innovation-focused growth</li>
-        <li>Execution roadmaps with measurable outcomes</li>
+        <li><b>Smoother Shifting:</b> Reduces friction and gear noise.</li>
+        <li><b>Longevity:</b> Protects transmission components for years.</li>
+        <li><b>Heat Resistance:</b> Maintains performance under high temperatures.</li>
       </ul>
-
-      <p>Agencies empower businesses by crafting strategies that are not only ambitious but also achievable.</p>
     `,
-    category: "Business",
-    tags: ["Strategy", "Innovation", "Growth"],
-    authorInfo: {
-      profilePicture: "/images/avatar.png",
-      name: "John Doe",
-    },
-    createdAt: "2025-08-20T00:00:00.000Z",
+    category: "Transmission Fluids",
+    tags: ["Transmission", "Lubricants", "Gearbox"],
+    authorInfo: { profilePicture: "/images/avatar.png", name: "John Doe" },
+    createdAt: "2025-08-06T00:00:00.000Z",
   },
   {
     id: 7,
-    thumbnail: "/images/marketing.jpg",
-    title: "Marketing Strategies for the Digital Era",
-    slug: "marketing-strategies-for-the-digital-era",
+    thumbnail: "/images/automotive.png",
+    title: "Brake Fluids: Safety Starts Here",
+    slug: "brake-fluids-safety-starts-here",
     shortDes:
-      "Digital marketing has transformed how companies reach and engage with audiences. Agencies must combine creativity, data, and technology to build strategies that deliver measurable results.",
+      "Brake fluids are essential for vehicle safety, ensuring responsive braking and preventing system failure. Learn why quality fluids matter for all vehicles.",
     des: `
-      <h2>Modern Marketing Essentials</h2>
-      <p><b>Marketing</b> today is about creating personalized experiences at scale. 
-      From content to advertising, every touchpoint matters.</p>
-
-      <h3>Effective Marketing Tactics</h3>
+      <h2>Importance of Brake Fluids</h2>
+      <p>Brake fluids transmit pressure from the pedal to the brake system. High-quality fluids ensure consistent, reliable braking performance.</p>
+      <h3>Key Features</h3>
       <ul>
-        <li>Search Engine Optimization (SEO)</li>
-        <li>Social media and influencer campaigns</li>
-        <li>Email and automation-based marketing</li>
+        <li><b>Reliable Performance:</b> Maintains braking power under all conditions.</li>
+        <li><b>High Boiling Point:</b> Reduces vapor lock risk in hot conditions.</li>
+        <li><b>Corrosion Protection:</b> Protects brake system components.</li>
       </ul>
-
-      <p>Agencies provide the expertise to align these strategies with business goals, ensuring growth and visibility.</p>
     `,
-    category: "Marketing",
-    tags: ["Marketing", "Digital", "SEO", "Social Media"],
-    authorInfo: {
-      profilePicture: "/images/avatar.png",
-      name: "John Doe",
-    },
-    createdAt: "2025-08-12T00:00:00.000Z",
+    category: "Brake Fluids",
+    tags: ["Brake", "Safety", "Lubricants"],
+    authorInfo: { profilePicture: "/images/avatar.png", name: "John Doe" },
+    createdAt: "2025-08-07T00:00:00.000Z",
   },
   {
     id: 8,
-    thumbnail: "/images/technology.jpg",
-    title: "Building Scalable Mobile Applications",
-    slug: "building-scalable-mobile-applications",
+    thumbnail: "/images/automotive.png",
+    title: "Coolants: Protecting Engines from Overheating",
+    slug: "coolants-protecting-engines-from-overheating",
     shortDes:
-      "Mobile applications are the backbone of modern customer engagement. Businesses rely on well-built apps to deliver value, convenience, and seamless experiences on the go.",
+      "Engine coolants prevent overheating, reduce corrosion, and maintain optimal performance. Discover how modern coolants keep engines running safely under all conditions.",
     des: `
-      <h2>The Power of Mobile</h2>
-      <p>From shopping to social interactions, mobile apps shape daily life. 
-      Agencies help companies transform ideas into <b>scalable mobile solutions</b>.</p>
-
-      <h3>Key Development Areas</h3>
+      <h2>Why Coolants Are Vital</h2>
+      <p>Coolants absorb heat and maintain the engine temperature. They protect engines from damage due to overheating or freezing.</p>
+      <h3>Benefits</h3>
       <ul>
-        <li>Cross-platform apps with React Native and Flutter</li>
-        <li>Performance optimization and scalability</li>
-        <li>App store launch & post-release support</li>
+        <li><b>Temperature Control:</b> Keeps engines within safe operating ranges.</li>
+        <li><b>Corrosion Prevention:</b> Protects engine and radiator components.</li>
+        <li><b>Extended Life:</b> Helps avoid costly repairs due to overheating.</li>
       </ul>
-
-      <p>Scalable mobile applications ensure businesses stay connected with customers anytime, anywhere.</p>
     `,
-    category: "Technology",
-    tags: ["Mobile", "App Development", "React Native"],
-    authorInfo: {
-      profilePicture: "/images/avatar.png",
-      name: "John Doe",
-    },
-    createdAt: "2025-08-16T00:00:00.000Z",
+    category: "Coolants",
+    tags: ["Engine", "Cooling", "Lubricants"],
+    authorInfo: { profilePicture: "/images/avatar.png", name: "John Doe" },
+    createdAt: "2025-08-08T00:00:00.000Z",
   },
   {
     id: 9,
-    thumbnail: "/images/consulting.jpg",
-    title: "Business Strategy and Innovation",
-    slug: "business-strategy-and-innovation",
+    thumbnail: "/images/automotive.png",
+    title: "Gear Oils: Keeping Transmission Systems Healthy",
+    slug: "gear-oils-keeping-transmission-systems-healthy",
     shortDes:
-      "A well-crafted business strategy ensures sustainable growth. Agencies combine market research, innovation, and execution plans to help companies navigate challenges and capture opportunities.",
+      "Gear oils reduce wear, prevent overheating, and ensure smooth operation of differentials and gearboxes. Learn how they improve vehicle reliability and performance.",
     des: `
-      <h2>Why Strategy Matters</h2>
-      <p>Without a clear strategy, even strong businesses risk falling behind. 
-      <b>Strategic planning</b> aligns operations, people, and goals for long-term success.</p>
-
-      <h3>Core Elements of a Winning Strategy</h3>
+      <h2>The Role of Gear Oils</h2>
+      <p>Gear oils provide lubrication for transmission gears, differentials, and transfer cases. They minimize wear and protect against heat damage.</p>
+      <h3>Advantages</h3>
       <ul>
-        <li>Market research and competitive analysis</li>
-        <li>Innovation-focused growth</li>
-        <li>Execution roadmaps with measurable outcomes</li>
+        <li><b>Friction Reduction:</b> Keeps gears running smoothly.</li>
+        <li><b>Heat Dissipation:</b> Prevents damage from high temperatures.</li>
+        <li><b>Longevity:</b> Extends life of gearbox components.</li>
       </ul>
-
-      <p>Agencies empower businesses by crafting strategies that are not only ambitious but also achievable.</p>
     `,
-    category: "Business",
-    tags: ["Strategy", "Innovation", "Growth"],
-    authorInfo: {
-      profilePicture: "/images/avatar.png",
-      name: "John Doe",
-    },
-    createdAt: "2025-08-20T00:00:00.000Z",
+    category: "Gear Oils",
+    tags: ["Gearbox", "Lubricants", "Automotive"],
+    authorInfo: { profilePicture: "/images/avatar.png", name: "John Doe" },
+    createdAt: "2025-08-09T00:00:00.000Z",
+  },
+  {
+    id: 10,
+    thumbnail: "/images/automotive.png",
+    title: "Lithium Greases: Versatile Protection for Machinery",
+    slug: "lithium-greases-versatile-protection-for-machinery",
+    shortDes:
+      "Lithium-based greases provide long-lasting lubrication for automotive, industrial, and marine applications. Explore their benefits for reducing friction and protecting moving parts.",
+    des: `
+      <h2>Why Lithium Greases Are Important</h2>
+      <p>Lithium greases offer excellent resistance to water, high temperatures, and heavy loads. They are widely used in bearings, joints, and mechanical assemblies.</p>
+      <h3>Benefits</h3>
+      <ul>
+        <li><b>Water Resistance:</b> Protects moving parts in wet conditions.</li>
+        <li><b>High Load Capacity:</b> Maintains lubrication under heavy pressure.</li>
+        <li><b>Durability:</b> Extends service intervals and reduces maintenance costs.</li>
+      </ul>
+    `,
+    category: "Lithium Greases",
+    tags: ["Greases", "Lubricants", "Machinery"],
+    authorInfo: { profilePicture: "/images/avatar.png", name: "John Doe" },
+    createdAt: "2025-08-10T00:00:00.000Z",
   },
 ];
 
 export const blogsCategory: Array<FilterValue> = [
   {
+    id: "0",
+    label: "All",
+  },
+  {
     id: "1",
-    label: "Technology",
+    label: "Automotive",
   },
   {
     id: "2",
-    label: "Consulting",
+    label: "Commercial",
   },
   {
     id: "3",
-    label: "Design",
+    label: "Motorcycle",
   },
   {
     id: "4",
-    label: "Marketing",
+    label: "Industrial",
   },
   {
     id: "5",
-    label: "Business",
+    label: "Marine",
   },
 ];
 

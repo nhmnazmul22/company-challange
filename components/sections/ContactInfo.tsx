@@ -1,11 +1,11 @@
 import React from "react";
-import Container from "../layout/Container";
+import Container from "@/components/layout/Container";
 import { contactInfo } from "@/data/constant";
-import ContactInfoCard from "../ui/ContactInfoCard";
-import Card from "../ui/Card";
-import OpenTime from "../ui/OpenTime";
+import ContactInfoCard from "@/components/ui/ContactInfoCard";
+import ContactCard from "@/components/ui/ContactCard";
+import OpenTime from "@/components/ui/OpenTime";
 import { Clock, Headphones, MessageCircle } from "lucide-react";
-import ContactForm from "../ui/ContactForm";
+import ContactForm from "@/components/ui/ContactForm";
 
 const ContactInfo = () => {
   return (
@@ -18,7 +18,7 @@ const ContactInfo = () => {
       <div className="mt-10 grid gird-cols-1 xl:grid-cols-12 max-sm:gap-y-10 sm:gap-10">
         <ContactForm />
         <div className="col-span-12 xl:col-span-4 max-xl:grid max-xl:grid-cols-1 max-xl:gap-x-5 space-y-10 max-xl:space-y-5 max-xl:order-[-1]">
-          <Card data={{ title: "Business Hours", icon: Clock }}>
+          <ContactCard data={{ title: "Business Hours", icon: Clock }}>
             <div className="space-y-3 text-start">
               <OpenTime title="Monday - Friday" subTitle="9:00 AM - 6:00 PM" />
               <OpenTime title="Saturday" subTitle="10:00 AM - 4:00 PM" />
@@ -31,8 +31,8 @@ const ContactInfo = () => {
                 </p>
               </div>
             </div>
-          </Card>
-          <Card data={{ title: "Other Ways to Reach Us" }}>
+          </ContactCard>
+          <ContactCard data={{ title: "Other Ways to Reach Us" }}>
             <div className="space-y-4">
               <div className="flex gap-2 items-center">
                 <span className="text-accent">
@@ -57,14 +57,14 @@ const ContactInfo = () => {
                 </div>
               </div>
             </div>
-          </Card>
-          <Card data={{ title: "Response Times" }}>
+          </ContactCard>
+          <ContactCard data={{ title: "Response Times" }}>
             <div className="space-y-3">
               <OpenTime title="Email" subTitle="Within 2 hours" />
               <OpenTime title="Phone" subTitle="Immediate" />
               <OpenTime title="Live Chat" subTitle="Within minutes" />
             </div>
-          </Card>
+          </ContactCard>
         </div>
       </div>
     </Container>

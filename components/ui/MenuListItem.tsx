@@ -1,5 +1,5 @@
 import React from "react";
-import { NavigationMenuLink } from "./shadcnui/navigation-menu";
+import { NavigationMenuLink } from "@/components/ui/shadcnui/navigation-menu";
 import Link from "next/link";
 
 const MenuListItem = ({

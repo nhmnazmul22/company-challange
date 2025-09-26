@@ -11,7 +11,7 @@ type Props = {
   };
 };
 
-const Card = ({ children, data }: Props) => {
+const ContactCard = ({ children, data }: Props) => {
   return (
     <div className="w-full bg-linear-to-b from-white to-gray-100 shadow hover:shadow-lg duration-300 px-5 py-8 rounded-xl border border-gray-100 space-y-3">
       <div className="flex justify-start gap-2 items-center mb-4">
@@ -27,4 +27,4 @@ const Card = ({ children, data }: Props) => {
   );
 };
 
-export default Card;
+export default ContactCard;

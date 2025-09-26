@@ -52,7 +52,6 @@ export interface CompanyInfo {
   updatedAt?: string;
 }
 
-// Products type
 export interface ProductsType {
   id: string | number;
   imgLink: string;
@@ -62,8 +61,16 @@ export interface ProductsType {
   price: number;
   category: string;
   isFeatured: boolean;
+  rating: number;
+  inStock: boolean;
+  shortDes: string;
   keyFeatures: Array<string>;
+  specifications: { [key: string]: string };
+  usage: Array<string>;
   applications: Array<string>;
+  benefits: Array<string>;
+  howToUse: Array<string>;
+  safetyInformation: Array<string>;
   createdAt?: string;
   updatedAt?: string;
 }
@@ -136,6 +143,7 @@ export interface Process {
 export interface FilterValue {
   id: string | number;
   label: string;
+  imgLink?: string;
 }
 
 // Gallery type
@@ -145,7 +153,6 @@ export interface GalleryType {
   title: string;
   des: string;
   category: string;
-  tags: Array<string>;
   createdAt?: string;
   updatedAt?: string;
 }

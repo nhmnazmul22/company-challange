@@ -1,11 +1,11 @@
 "use client";
 import { FormEvent, useState } from "react";
-import { InputWithLabel } from "./InputWithLabel";
-import SelectWithLabel from "./SelectWithLabel";
+import { InputWithLabel } from "@/components/ui/InputWithLabel";
+import SelectWithLabel from "@/components/ui/SelectWithLabel";
 import { productsCategories } from "@/data/products";
-import { Textarea } from "./shadcnui/textarea";
-import { Label } from "./shadcnui/label";
-import { Button } from "./shadcnui/button";
+import { Textarea } from "@/components/ui/shadcnui/textarea";
+import { Label } from "@/components/ui/shadcnui/label";
+import { Button } from "@/components/ui/shadcnui/button";
 import { Alert, AlertTitle } from "@/components/ui/shadcnui/alert";
 import { AlertCircleIcon, Send } from "lucide-react";
 import { isValidateEmail } from "@/lib/validator";

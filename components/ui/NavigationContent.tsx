@@ -1,9 +1,12 @@
+"use client";
 import React from "react";
-import { NavigationMenuContent } from "./shadcnui/navigation-menu";
-import MenuListItem from "./MenuListItem";
+import { NavigationMenuContent } from "@/components/ui/shadcnui/navigation-menu";
+import MenuListItem from "@/components/ui/MenuListItem";
 import { serviceDropDownItems } from "@/data/constant";
+import useFilter from "@/store/useFilter";
 
 const NavigationContent = () => {
+  const { setProductFilterValue } = useFilter();
   return (
     <NavigationMenuContent className="items-center p-5">
       <div className="grid grid-cols-3 gap-5 w-[580px]">
@@ -13,7 +16,12 @@ const NavigationContent = () => {
             <hr className="my-2 border-gray-200" />
           </div>
           {serviceDropDownItems.lubricants.map((item) => (
-            <MenuListItem key={item.id}>{item.label}</MenuListItem>
+            <MenuListItem
+              key={item.id}
+              onClick={() => setProductFilterValue(item.label.toLowerCase())}
+            >
+              {item.label}
+            </MenuListItem>
           ))}
         </ul>
         <ul className="">
@@ -22,7 +30,12 @@ const NavigationContent = () => {
             <hr className="my-2 border-gray-200" />
           </div>
           {serviceDropDownItems.carParts.map((item) => (
-            <MenuListItem key={item.id}>{item.label}</MenuListItem>
+            <MenuListItem
+              key={item.id}
+              onClick={() => setProductFilterValue(item.label.toLowerCase())}
+            >
+              {item.label}
+            </MenuListItem>
           ))}
         </ul>
         <ul className="">
@@ -31,7 +44,12 @@ const NavigationContent = () => {
             <hr className="my-2 border-gray-200" />
           </div>
           {serviceDropDownItems.oils.map((item) => (
-            <MenuListItem key={item.id}>{item.label}</MenuListItem>
+            <MenuListItem
+              key={item.id}
+              onClick={() => setProductFilterValue(item.label.toLowerCase())}
+            >
+              {item.label}
+            </MenuListItem>
           ))}
         </ul>
       </div>

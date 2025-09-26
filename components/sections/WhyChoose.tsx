@@ -1,6 +1,6 @@
 import React from "react";
-import SectionHeading from "../ui/SectionHeading";
-import InfoCard from "../ui/InfoCard";
+import SectionHeading from "@/components/ui/SectionHeading";
+import InfoCard from "@/components/ui/InfoCard";
 import companyInfo from "@/data/company";
 import Container from "@/components/layout/Container";
 

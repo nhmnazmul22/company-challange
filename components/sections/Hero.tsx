@@ -2,15 +2,15 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Parallax, Pagination, Navigation, Autoplay } from "swiper/modules";
-import { ArrowRight, Award, Download, Phone } from "lucide-react";
-import { Button } from "../ui/shadcnui/button";
+import { ArrowRight, Award } from "lucide-react";
+import { Button } from "@/components/ui/shadcnui/button";
 import Link from "next/link";
 
 // CSS Imports
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import "../../styles/swiper.css";
+import "@/styles/swiper.css";
 import { sliderData } from "@/data/constant";
 
 const HeroSection = () => {
@@ -65,7 +65,7 @@ const HeroSection = () => {
                 {data.shortDes}
               </p>
             </div>
-            <div className="mt-5 space-x-6">
+            <div className="mt-5 flex max-lg:justify-center max-sm:flex-col gap-5">
               <Link href="/products">
                 <Button variant="default" size="lg">
                   Explore Products

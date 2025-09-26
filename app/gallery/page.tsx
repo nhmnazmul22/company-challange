@@ -9,14 +9,14 @@ const Gallery: NextPage = ({}) => {
   return (
     <RootLayout>
       <PageHeader
-        title="Our Portfolio"
-        subTitle="Explore our collection of successful projects and creative solutions that have transformed businesses across various industries."
+        title="Our Gallery"
+        subTitle="Explore our range of products, company events, and certifications to see our commitment to quality and innovation in the lubricant industry."
       />
-      <OurImpact />
       <OurWork />
+      <OurImpact />
       <CTA
-        title="Ready to Create Something Amazing?"
-        subTitle="Let's discuss your project and see how we can bring your vision to life with our expertise and creativity."
+        title="Ready to Optimize Your Machinery?"
+        subTitle="Let’s discuss your lubrication needs and explore how our high-quality products can enhance performance and protect your equipment."
       />
     </RootLayout>
   );

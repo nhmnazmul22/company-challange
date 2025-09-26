@@ -6,7 +6,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/shadcnui/select";
-import { Label } from "./shadcnui/label";
+import { Label } from "@/components/ui/shadcnui/label";
 import { cn } from "@/lib/utils";
 
 type Props = {

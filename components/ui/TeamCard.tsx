@@ -9,7 +9,7 @@ import {
   CardTitle,
 } from "@/components/ui/shadcnui/card";
 import Image from "next/image";
-import { Badge } from "./shadcnui/badge";
+import { Badge } from "@/components/ui/shadcnui/badge";
 import Link from "next/link";
 import { Github, Instagram, Linkedin, Twitter } from "lucide-react";
 
@@ -39,7 +39,7 @@ const TeamCard = ({ data }: Props) => {
       </CardHeader>
       <CardContent>
         <CardTitle className="text-xl mb-1">{data.name}</CardTitle>
-        <Badge className="bg-linear-to-bl from-violet-500 to-fuchsia-500 text-primary-foreground">
+        <Badge className="bg-linear-to-bl from-blue-400 to-blue-500 text-primary-foreground">
           {data.position}
         </Badge>
 

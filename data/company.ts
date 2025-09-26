@@ -16,7 +16,7 @@ import {
 const companyInfo: CompanyInfo = {
   ourStory: {
     title: "Our Story",
-    des: "Pro Lubricant is a trusted leader in high-performance lubricants, oils, and greases for automotive, industrial, marine, and specialty applications. With years of expertise, we combine innovation, technology, and sustainability to deliver products that keep engines and machinery running at peak performance.",
+    des: "Pro Lubricant is a trusted leader in high-performance lubricants, oils, and greases for automotive, industrial, marine, and specialty applications. With years of expertise, we combine innovation, technology, and sustainability to deliver products that keep engines and machinery running at peak performance. From our early beginnings, our mission has been simple — to provide reliable lubrication solutions that enhance performance, extend equipment life, and reduce downtime. Over the years, we have grown into a brand recognized for uncompromising quality and technical excellence.",
     otherInfo: [
       {
         id: 1,
@@ -41,27 +41,27 @@ const companyInfo: CompanyInfo = {
   ourImpact: [
     {
       id: 1,
-      impactNum: "250+",
-      title: "Projects Delivered",
-      des: "Successful projects across various industries",
+      impactNum: "500+",
+      title: "Clients Served",
+      des: "Trusted by industries, workshops, and distributors worldwide.",
     },
     {
       id: 2,
-      impactNum: "98%",
-      title: "Client Satisfaction",
-      des: "Average client satisfaction rating",
+      impactNum: "10M+ L",
+      title: "Liters Supplied",
+      des: "High-performance lubricants delivered annually across markets.",
     },
     {
       id: 3,
-      impactNum: "15+",
-      title: "Years Experience",
-      des: "Combined team experience in digital solutions",
+      impactNum: "20+",
+      title: "Years of Expertise",
+      des: "Proven experience in manufacturing and supplying lubricants.",
     },
     {
       id: 4,
-      impactNum: "25",
-      title: "Countries Served",
-      des: "Global reach across multiple continents",
+      impactNum: "30+",
+      title: "Countries Reached",
+      des: "Global distribution network with consistent quality standards.",
     },
   ],
   whyChoose: [

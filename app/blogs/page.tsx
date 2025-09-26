@@ -8,7 +8,7 @@ const Blogs: NextPage = ({}) => {
     <RootLayout>
       <PageHeader
         title="Our Latest Blogs"
-        subTitle="Insights, trends, and expertise from our team to help you stay ahead in the digital landscape."
+        subTitle="Stay updated with expert knowledge, lubricant tips, and the latest industry trends that keep your engines and machines running at their best."
       />
       <BlogList />
     </RootLayout>

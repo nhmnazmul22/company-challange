@@ -9,7 +9,7 @@ const fontPoppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "InnovateX",
+  title: "Pro Lubricant",
   description: "A company portfolio web application",
 };
 

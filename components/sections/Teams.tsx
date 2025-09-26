@@ -1,8 +1,8 @@
 import React from "react";
-import Container from "../layout/Container";
-import SectionHeading from "../ui/SectionHeading";
+import Container from "@/components/layout/Container";
+import SectionHeading from "@/components/ui/SectionHeading";
 import teams from "@/data/teams";
-import TeamCard from "../ui/TeamCard";
+import TeamCard from "@/components/ui/TeamCard";
 
 const Teams = () => {
   return (

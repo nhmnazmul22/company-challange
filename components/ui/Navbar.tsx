@@ -9,12 +9,12 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/shadcnui/navigation-menu";
 import { navItems } from "@/data/constant";
-import { Button } from "./shadcnui/button";
+import { Button } from "@/components/ui/shadcnui/button";
 import { Download, Menu, X } from "lucide-react";
 import { usePathname } from "next/navigation";
 import useMobilMenu from "@/store/useMobileMenu";
 import { cn } from "@/lib/utils";
-import NavigationContent from "./NavigationContent";
+import NavigationContent from "@/components/ui/NavigationContent";
 
 const Navbar = () => {
   const path = usePathname();
@@ -37,7 +37,9 @@ const Navbar = () => {
                   if (item.label === "Products") {
                     return (
                       <NavigationMenuItem key={item.label}>
-                        <NavigationMenuTrigger>Products</NavigationMenuTrigger>
+                        <NavigationMenuTrigger>
+                          <Link href="/products">Products</Link>
+                        </NavigationMenuTrigger>
                         <NavigationContent />
                       </NavigationMenuItem>
                     );
